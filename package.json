@@ -1,0 +1,24 @@
+{
+  "name": "goit-js-hw-11-timer",
+  "version": "1.0.0",
+  "description": "Таймер обратного отсчета\r Создай плагин настраиваемого таймера, который ведет обратный отсчет до предварительно определенной даты. Такой плагин может использоваться в блогах и интернет-магазинах, страницах регистрации событий, во время технического обслуживания и т. д.",
+  "main": "timer.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "parcel <your entry file>",
+    "build": "parcel build <your entry file>"
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Olga-94/goit-js-hw-11-timer.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Olga-94/goit-js-hw-11-timer/issues"
+  },
+  "homepage": "https://github.com/Olga-94/goit-js-hw-11-timer#readme"
+}
+
+
