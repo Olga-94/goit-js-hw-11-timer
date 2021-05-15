@@ -2,7 +2,7 @@
   "name": "goit-js-hw-11-timer",
   "version": "1.0.0",
   "description": "",
-  "main": "timer.js",
+  "main": "index.js",
   "scripts": {
     "dev": "parcel timer.html",
     "build": "parcel build timer.html --public-url /goit-js-hw-11-timer/",
