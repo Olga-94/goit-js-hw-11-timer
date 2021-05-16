@@ -13,11 +13,11 @@ class CountdownTimer {
     startTimer() {
         setInterval(() => {
             const currentTime = Date.now();
-            const time = this.targetDate - currentTime;
-            const days = this.pad(Math.floor(time / (1000 * 60 * 60 * 24)));
-            const hours = this.pad(Math.floor((time % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)));
-            const mins = this.pad(Math.floor((time % (1000 * 60 * 60)) / (1000 * 60)));
-            const secs = this.pad(Math.floor((time % (1000 * 60)) / 1000));
+            const deltaTime = this.targetDate - currentTime;
+            const days = this.pad(Math.floor(deltaTime / (1000 * 60 * 60 * 24)));
+            const hours = this.pad(Math.floor((deltaTime % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)));
+            const mins = this.pad(Math.floor((deltaTime % (1000 * 60 * 60)) / (1000 * 60)));
+            const secs = this.pad(Math.floor((deltaTime % (1000 * 60)) / 1000));
           this.countTime(days, hours, mins, secs);
           
         }, 1000)
