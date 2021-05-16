@@ -6,8 +6,8 @@ const refs = {
 };
 
 class CountdownTimer {
-    constructor({selector, targetDate}) {
         this.selector = document.querySelector(selector);
+    constructor({ targetDate}) {
         this.targetDate = targetDate;
     };
     startTimer() {
