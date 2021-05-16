@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "parcel timer.html",
-    "build": "parcel build timer.html --public-url /goit-js-hw-11-timer/",
+    "dev": "parcel index.html",
+    "build": "parcel build index.html --public-url /goit-js-hw-11-timer/",
     "deploy": "gh-pages -d dist",
     "predeploy": "npm run build"
   },
