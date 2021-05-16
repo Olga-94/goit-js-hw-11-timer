@@ -10,7 +10,7 @@ class CountdownTimer {
         this.selector = document.querySelector(selector);
         this.targetDate = targetDate;
     };
-    startTimer() {
+    start() {
         setInterval(() => {
             const currentTime = Date.now();
             const deltaTime = this.targetDate - currentTime;
@@ -38,4 +38,4 @@ class CountdownTimer {
 const timerDate = new CountdownTimer({
   selector: '#timer-1',
   targetDate: new Date('May 31, 2021'),
-}).startTimer();
+}).start();
