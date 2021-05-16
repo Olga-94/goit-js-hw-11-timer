@@ -18,9 +18,12 @@ class CountdownTimer {
             const hours = this.pad(Math.floor((time % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)));
             const mins = this.pad(Math.floor((time % (1000 * 60 * 60)) / (1000 * 60)));
             const secs = this.pad(Math.floor((time % (1000 * 60)) / 1000));
-            this.countTime(days, hours, mins, secs);
+          this.countTime(days, hours, mins, secs);
+          
         }, 1000)
-    };
+        
+  };
+  
     countTime(days, hours, mins, secs) {
     this.selector.querySelector('[data-value="days"]').textContent = days;
     this.selector.querySelector('[data-value="hours"]').textContent = hours;
